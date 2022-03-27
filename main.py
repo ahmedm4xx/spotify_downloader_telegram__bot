@@ -93,6 +93,9 @@ def START(msg,chat_id):
     elif msg == '/artist':
         sort[chat_id]='artist'
         bot.sendMessage(chat_id,'send name and name of artist like this: \nName artist')
+    elif msg == "/channel":
+        sort[chat_id]='channel'
+        bot.sendMessage(chat_id, 'Join to our channel to get news and updates about the bot : https://t.me/SpotifyMusicNews')
 
     else:
         try:
